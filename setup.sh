@@ -1,4 +1,4 @@
-# defaults
+echo "Setting up defaults ..."
 # Finderで不可視ファイルを見れるようにする
 defaults write com.apple.finder AppleShowAllFiles TRUE
 # Finderをフルパス表示にする
@@ -8,38 +8,36 @@ rm ~/*/.localized
 sudo rm /*/.localized
 # Finderを再起動する
 killall Finder
-
 # スクリーンショットをダウンロードに保存するようにする
 defaults write com.apple.screencapture location ~/Downloads/
 # スクリーンショットの影を消す
 defaults write com.apple.screencapture disable-shadow -boolean true
 
-
-# brew
 # 最初にパスワードが必要。30分くらい。
 if ! command_exists brew ; then
-echo " --------- Homebrew ----------"
+echo "Setting up Homebrew ..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew -v
-echo " ------------ END ------------"
 fi
 
 if ! command_exists git ; then
-echo " ------------ Git ------------"
+echo "Setting up git ..."
 brew install git
 git --version
 git config --global user.name "murs313"
 git config --global user.email "murbook313@gmail.com"
-echo " ------------ END ------------"
 fi
 
-echo '------ Setup Karabiner ------'
+echo "Setting up Karabiner ..."
 brew install --cask karabiner-elements
 git clone https://github.com/murs313/setup-mac.git git/setup-mac
+cp -r ~/git/setup-mac/karabiner ~/.config
+
 echo "Setting up zsh ..."
 cp -r ~/git/setup-mac/.zshrc ~/.zshrc
 source ~/.zshrc
 
+echo "brew installing ..."
 brew install --cask evernote
 brew install --cask slack
 brew install --cask google-chrome
