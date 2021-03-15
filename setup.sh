@@ -36,8 +36,9 @@ fi
 echo '------ Setup Karabiner ------'
 brew install --cask karabiner-elements
 git clone https://github.com/murs313/setup-mac.git git/setup-mac
-cp -r git/setup-mac/karabiner .config
-echo '------------ END ------------'
+echo "Setting up zsh ..."
+cp -r ~/git/setup-mac/.zshrc ~/.zshrc
+source ~/.zshrc
 
 brew install --cask evernote
 brew install --cask slack
