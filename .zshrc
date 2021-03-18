@@ -8,5 +8,5 @@ autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 # プロンプトの設定
-PROMPT='%F{blue}%n@%m %D %* %f%% '
-RPROMPT='%F{red}%~%f'
+PROMPT='%F{blue}%n@%m %~%f %% '
+RPROMPT='%F{red}%D %* %f'
