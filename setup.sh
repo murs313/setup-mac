@@ -28,13 +28,15 @@ git config --global user.name "murs313"
 git config --global user.email "murbook313@gmail.com"
 fi
 
+PATH_TO_CLONE="Projects"
+git clone https://github.com/murs313/setup-mac.git $PATH_TO_CLONE/setup-mac
+
 echo "Setting up Karabiner ..."
 brew install --cask karabiner-elements
-git clone https://github.com/murs313/setup-mac.git Projects/setup-mac
-cp -r ~/git/setup-mac/karabiner ~/.config
+cp -r ~/$PATH_TO_CLONE/setup-mac/karabiner ~/.config
 
 echo "Setting up zsh ..."
-cp -r ~/git/setup-mac/.zshrc ~/.zshrc
+cp -r ~/$PATH_TO_CLONE/setup-mac/.zshrc ~/.zshrc
 source ~/.zshrc
 
 echo "brew installing ..."
