@@ -30,7 +30,7 @@ fi
 
 echo "Setting up Karabiner ..."
 brew install --cask karabiner-elements
-git clone https://github.com/murs313/setup-mac.git git/setup-mac
+git clone https://github.com/murs313/setup-mac.git Projects/setup-mac
 cp -r ~/git/setup-mac/karabiner ~/.config
 
 echo "Setting up zsh ..."
