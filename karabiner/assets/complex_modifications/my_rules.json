@@ -2,28 +2,13 @@
     "title": "My rules",
     "rules": [
         {
-            "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）（不可視文字対応済み）",
+            "description": "command単体 -> 英数・かな",
             "manipulators": [
                 {
-                    "type": "basic",
                     "from": {
-                        "key_code": "left_command",
-                        "modifiers": {
-                            "optional": [
-                                "caps_lock"
-                            ]
-                        }
-                    },
-                    "parameters": {
-                        "basic.to_if_held_down_threshold_milliseconds": 100
+                        "key_code": "left_command"
                     },
                     "to": [
-                        {
-                            "key_code": "left_command",
-                            "lazy": true
-                        }
-                    ],
-                    "to_if_held_down": [
                         {
                             "key_code": "left_command"
                         }
@@ -32,28 +17,19 @@
                         {
                             "key_code": "japanese_eisuu"
                         }
-                    ]
-                },
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "right_command",
-                        "modifiers": {
-                            "optional": [
-                                "caps_lock"
-                            ]
-                        }
-                    },
-                    "parameters": {
-                        "basic.to_if_held_down_threshold_milliseconds": 100
-                    },
-                    "to": [
-                        {
-                            "key_code": "right_command",
-                            "lazy": true
-                        }
                     ],
                     "to_if_held_down": [
+                        {
+                            "key_code": "left_command"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "right_command"
+                    },
+                    "to": [
                         {
                             "key_code": "right_command"
                         }
@@ -62,7 +38,13 @@
                         {
                             "key_code": "japanese_kana"
                         }
-                    ]
+                    ],
+                    "to_if_held_down": [
+                        {
+                            "key_code": "right_command"
+                        }
+                    ],
+                    "type": "basic"
                 }
             ]
         },
