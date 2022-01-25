@@ -96,10 +96,9 @@
             ]
         },
         {
-            "description": "option + delete で backspace",
+            "description": "option + delete -> backspace",
             "manipulators": [
                 {
-                    "type": "basic",
                     "from": {
                         "key_code": "delete_or_backspace",
                         "modifiers": {
@@ -112,21 +111,21 @@
                         {
                             "key_code": "delete_forward"
                         }
-                    ]
+                    ],
+                    "type": "basic"
                 }
             ]
         },
         {
-            "description": "option + control + V を無効化（不可視文字）",
-            "manipulators": [
+            "description" : "option + control + V を無効化（不可視文字）",
+            "manipulators" : [
                 {
                     "type": "basic",
                     "from": {
                         "key_code": "v",
                         "modifiers": {
                             "mandatory": [
-                                "option",
-                                "control"
+                                "option", "control"
                             ]
                         }
                     },
