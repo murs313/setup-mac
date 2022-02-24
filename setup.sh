@@ -14,18 +14,14 @@ defaults write com.apple.screencapture disable-shadow -boolean true
 
 # Homebrew
 # 最初にパスワードが必要。30分くらい。
-if ! command_exists brew ; then
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew -v
-fi
 
 # git
-if ! command_exists git ; then
 brew install git
 git --version
 git config --global user.name "murs313"
 git config --global user.email "murbook313@gmail.com"
-fi
 
 git clone https://github.com/murs313/setup-mac.git Projects/setup-mac
 
