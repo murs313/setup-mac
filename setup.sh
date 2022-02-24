@@ -29,7 +29,7 @@ git clone https://github.com/murs313/setup-mac.git Projects/setup-mac
 brew install --cask karabiner-elements
 cp -r ~/Projects/setup-mac/karabiner ~/.config
 
-# git
+# zsh
 cp -r ~/Projects/setup-mac/.zshrc ~/.zshrc
 source ~/.zshrc
 
