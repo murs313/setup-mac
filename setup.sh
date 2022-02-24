@@ -49,16 +49,16 @@ brew install --cask visual-studio-code
 brew install --cask toggl-track
 
 # Android
-# brew install --cask android-studio
+brew install --cask android-studio
 brew install android-platform-tools
 brew install scrcpy
 
 # Backend
-# brew install --cask docker
-# brew install --cask datagrip
-# brew install --cask postman
-# brew install jq
-# brew install wget
+brew install --cask docker
+brew install --cask datagrip
+brew install --cask postman
+brew install jq
+brew install wget
 
 # Frontend
-# brew install npm
+brew install npm
