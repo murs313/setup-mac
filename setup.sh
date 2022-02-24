@@ -12,12 +12,14 @@ defaults write com.apple.screencapture location ~/Downloads/
 # スクリーンショットの影を消す
 defaults write com.apple.screencapture disable-shadow -boolean true
 
+# Homebrew
 # 最初にパスワードが必要。30分くらい。
 if ! command_exists brew ; then
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew -v
 fi
 
+# git
 if ! command_exists git ; then
 brew install git
 git --version
@@ -27,12 +29,15 @@ fi
 
 git clone https://github.com/murs313/setup-mac.git Projects/setup-mac
 
+# karabiner
 brew install --cask karabiner-elements
 cp -r ~/Projects/setup-mac/karabiner ~/.config
 
+# git
 cp -r ~/Projects/setup-mac/.zshrc ~/.zshrc
 source ~/.zshrc
 
+# essentials
 brew install --cask evernote
 brew install --cask google-chrome
 brew install --cask itsycal
