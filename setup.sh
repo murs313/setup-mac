@@ -49,6 +49,7 @@ brew install scrcpy
 # Backend
 brew install --cask docker
 brew install --cask datagrip
+brew install --cask tableplus
 brew install --cask postman
 brew install jq
 brew install wget
