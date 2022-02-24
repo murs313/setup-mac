@@ -53,6 +53,3 @@ brew install --cask tableplus
 brew install --cask postman
 brew install jq
 brew install wget
-
-# Frontend
-brew install npm
