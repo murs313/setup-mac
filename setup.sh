@@ -34,12 +34,12 @@ cp -r ~/Projects/setup-mac/.zshrc ~/.zshrc
 source ~/.zshrc
 
 brew install --cask evernote
-brew install --cask slack
 brew install --cask google-chrome
-brew install --cask discord
 brew install --cask itsycal
 brew install --cask clipy
 brew install --cask visual-studio-code
+brew install --cask slack
+brew install --cask discord
 brew install --cask toggl-track
 
 # Android
