@@ -50,6 +50,8 @@ brew install --cask toggl-track
 
 # Android
 # brew install --cask android-studio
+brew install android-platform-tools
+brew install scrcpy
 
 # Backend
 # brew install --cask docker
