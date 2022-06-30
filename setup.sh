@@ -41,16 +41,27 @@ brew install --cask visual-studio-code
 brew install --cask slack
 brew install --cask discord
 brew install --cask toggl-track
-
-# Android
-brew install --cask android-studio
-brew install android-platform-tools
-brew install scrcpy
+brew install --cask appcleaner
+brew install --cask zsa-wally
 
 # Backend
 brew install --cask docker
-brew install --cask datagrip
 brew install --cask tableplus
 brew install --cask postman
 brew install jq
 brew install wget
+
+# Web
+brew install npm
+
+# Android
+brew install --cask android-studio
+brew install scrcpy
+
+# Flutter
+brew install --cask flutter
+
+# 遊び
+brew install --cask obs
+brew install --cask steam
+brew install --cask wine-crossover
