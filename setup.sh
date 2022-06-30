@@ -25,12 +25,16 @@ git config --global user.email "murbook313@gmail.com"
 git clone https://github.com/murs313/setup-mac.git ~/Git/setup-mac
 
 # zsh
-cp -r ~/Projects/setup-mac/.zshrc ~/.zshrc
+rm ~/.zshrc
+ln -s ~/Git/setup-mac/.zshrc ~/.zshrc
 source ~/.zshrc
 
 # karabiner
 brew install --cask karabiner-elements
-cp -r ~/Git/setup-mac/karabiner ~/.config
+rm ~/.config/karabiner/karabiner.json
+ln -s ~/Git/setup-mac/.config/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
+rm ~/.config/karabiner/assets
+ln -s ~/Git/setup-mac/.config/karabiner/assets ~/.config/karabiner/
 
 # essentials
 brew install --cask evernote
