@@ -117,6 +117,30 @@
             ]
         },
         {
+            "description" : "shift + 英数 -> space を無効化",
+            "manipulators" : [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "v",
+                        "modifiers": {
+                            "mandatory": [
+                                "option", "control"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "v",
+                            "modifiers": [
+                                "control"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "description" : "option + control + V を無効化（不可視文字）",
             "manipulators" : [
                 {

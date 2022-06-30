@@ -1,1 +1,7 @@
-.DS_Store
+*
+!*/
+!/.gitignore
+!/.zshrc
+!/Projects/setup-mac/setup.sh
+!/.config/karabiner/assets/complex_modifications/*
+/.config/karabiner/assets/complex_modifications/.DS_STORE
