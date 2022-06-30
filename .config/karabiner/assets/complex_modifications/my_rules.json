@@ -2,9 +2,10 @@
     "title": "My rules",
     "rules": [
         {
-            "description": "command単体 -> 英数・かな",
+            "description": "[US/JA] command単体 -> 英数・かな",
             "manipulators": [
                 {
+                    "type": "basic",
                     "from": {
                         "key_code": "left_command"
                     },
@@ -22,10 +23,10 @@
                         {
                             "key_code": "left_command"
                         }
-                    ],
-                    "type": "basic"
+                    ]
                 },
                 {
+                    "type": "basic",
                     "from": {
                         "key_code": "right_command"
                     },
@@ -43,15 +44,15 @@
                         {
                             "key_code": "right_command"
                         }
-                    ],
-                    "type": "basic"
+                    ]
                 }
             ]
         },
         {
-            "description": "英数・かな - > command",
+            "description": "[JA] 英数・かな - > command",
             "manipulators": [
                 {
+                    "type": "basic",
                     "from": {
                         "key_code": "japanese_eisuu"
                     },
@@ -69,10 +70,10 @@
                         {
                             "key_code": "left_command"
                         }
-                    ],
-                    "type": "basic"
+                    ]
                 },
                 {
+                    "type": "basic",
                     "from": {
                         "key_code": "japanese_kana"
                     },
@@ -90,15 +91,15 @@
                         {
                             "key_code": "right_command"
                         }
-                    ],
-                    "type": "basic"
+                    ]
                 }
             ]
         },
         {
-            "description": "option + delete -> backspace",
+            "description": "[US] option + backspace -> delete",
             "manipulators": [
                 {
+                    "type": "basic",
                     "from": {
                         "key_code": "delete_or_backspace",
                         "modifiers": {
@@ -111,21 +112,104 @@
                         {
                             "key_code": "delete_forward"
                         }
-                    ],
-                    "type": "basic"
+                    ]
                 }
             ]
         },
         {
-            "description" : "option + control + V を無効化（不可視文字）",
-            "manipulators" : [
+            "description": "[JA] fn + backspace -> delete",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "delete_or_backspace",
+                        "modifiers": {
+                            "mandatory": [
+                                "fn"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "delete_forward"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "[JA] \"shift + 英数 -> space\", \"control + 英数・かな -> space\" を無効化",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "japanese_eisuu",
+                        "modifiers": {
+                            "mandatory": [
+                                "shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_command",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "japanese_eisuu",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_command",
+                            "modifiers": [
+                                "control"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "japanese_kana",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_command",
+                            "modifiers": [
+                                "control"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "option + control + V を無効化（不可視文字）",
+            "manipulators": [
                 {
                     "type": "basic",
                     "from": {
                         "key_code": "v",
                         "modifiers": {
                             "mandatory": [
-                                "option", "control"
+                                "option",
+                                "control"
                             ]
                         }
                     },
