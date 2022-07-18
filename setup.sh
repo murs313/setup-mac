@@ -13,7 +13,6 @@ defaults write com.apple.screencapture location ~/Downloads/
 defaults write com.apple.screencapture disable-shadow -boolean true
 
 # Install Homebrew
-# 最初にパスワードが必要。30分くらい。
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # Set up git
