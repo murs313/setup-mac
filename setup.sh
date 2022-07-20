@@ -66,5 +66,6 @@ brew install --cask flutter
 
 # 遊び
 brew install --cask obs
+brew install --cask soundflower
 brew install --cask steam
 brew install --cask wine-crossover
