@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # フォルダを英語表記にする
 rm ~/*/.localized
 sudo rm /*/.localized
