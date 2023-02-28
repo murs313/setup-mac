@@ -21,6 +21,7 @@ defaults write com.apple.screencapture disable-shadow -boolean true
 brew install git
 git config --global user.name "murs313"
 git config --global user.email "38303031+murs313@users.noreply.github.com"
+git config --global init.defaultBranch main
 
 # Clone repo
 git clone https://github.com/murs313/setup-mac.git ~/Git/setup-mac
