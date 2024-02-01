@@ -2,7 +2,8 @@
 
 # フォルダを英語表記にする
 rm ~/*/.localized
-sudo rm /*/.localized
+# sudo必要か不明
+# sudo rm /*/.localized
 # Finderで不可視ファイルを見れるようにする
 defaults write com.apple.finder AppleShowAllFiles TRUE
 # Finderをフルパス表示にする
@@ -33,13 +34,13 @@ source ~/.zshrc
 
 # karabiner
 brew install --cask karabiner-elements
+# karabinerを起動
 rm ~/.config/karabiner/karabiner.json
 ln -s ~/Git/setup-mac/.config/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
 rm ~/.config/karabiner/assets
 ln -s ~/Git/setup-mac/.config/karabiner/assets ~/.config/karabiner/
 
 # essentials
-brew install --cask evernote
 brew install --cask google-chrome
 brew install --cask itsycal
 brew install --cask clipy
