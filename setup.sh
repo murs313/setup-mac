@@ -47,7 +47,8 @@ brew install --cask clipy
 brew install --cask visual-studio-code
 brew install --cask slack
 brew install --cask discord
-brew install --cask toggl-track
+# caskからなくなってた
+# brew install --cask toggl-track
 brew install --cask appcleaner
 brew install --cask zsa-wally
 
