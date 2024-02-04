@@ -21,5 +21,8 @@ PROMPT='%F{cyan}%D{%Y/%m/%d} %* %~%f %% '
 # PATHの設定
 export PATH=$PATH:$HOME/.pub-cache/bin
 
-export JAVA_HOME=/Applications/'Android Studio.app'/Contents/jre/Contents/Home
+export JAVA_HOME=/Applications/'Android Studio.app'/Contents/jbr/Contents/Home
 export PATH=$PATH:$JAVA_HOME/bin
+
+# asdfの設定
+. /usr/local/opt/asdf/libexec/asdf.sh
