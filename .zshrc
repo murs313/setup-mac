@@ -19,10 +19,14 @@ setopt interactivecomments
 PROMPT='%F{cyan}%D{%Y/%m/%d} %* %~%f %% '
 
 # PATHの設定
+# Pub(Dart/Flutter)
 export PATH=$PATH:$HOME/.pub-cache/bin
-
+# Java(Flutter/Android)
 export JAVA_HOME=/Applications/'Android Studio.app'/Contents/jbr/Contents/Home
 export PATH=$PATH:$JAVA_HOME/bin
+# Deno
+export DENO_INSTALL="$HOME/.deno"
+export PATH="$PATH:$DENO_INSTALL/bin"
 
 # asdfの設定
 . /usr/local/opt/asdf/libexec/asdf.sh
