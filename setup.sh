@@ -42,15 +42,11 @@ ln -s ~/Git/setup-mac/.config/karabiner/assets ~/.config/karabiner/
 
 # essentials
 brew install --cask google-chrome
+brew install --cask slack
+brew install --cask visual-studio-code
 brew install --cask itsycal
 brew install --cask clipy
-brew install --cask visual-studio-code
-brew install --cask slack
-brew install --cask discord
-# caskからなくなってた
-# brew install --cask toggl-track
 brew install --cask appcleaner
-brew install --cask zsa-wally
 
 # Backend
 brew install --cask docker
@@ -74,3 +70,4 @@ brew install --cask obs
 brew install --cask soundflower
 brew install --cask steam
 brew install --cask wine-crossover
+brew install --cask discord
