@@ -28,6 +28,7 @@ git config --global init.defaultBranch main
 git clone https://github.com/murs313/setup-mac.git ~/Git/setup-mac
 
 # zsh
+brew install zsh-autosuggestions
 rm ~/.zshrc
 ln -s ~/Git/setup-mac/.zshrc ~/.zshrc
 source ~/.zshrc
