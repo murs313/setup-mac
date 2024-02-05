@@ -38,7 +38,7 @@ brew install --cask karabiner-elements
 # karabinerを起動
 rm ~/.config/karabiner/karabiner.json
 ln -s ~/Git/setup-mac/.config/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
-rm ~/.config/karabiner/assets
+rm -r ~/.config/karabiner/assets
 ln -s ~/Git/setup-mac/.config/karabiner/assets ~/.config/karabiner/
 
 # essentials
