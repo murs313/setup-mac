@@ -45,6 +45,7 @@ ln -s ~/Git/setup-mac/.config/karabiner/assets ~/.config/karabiner/
 brew install --cask google-chrome
 brew install --cask slack
 brew install --cask visual-studio-code
+brew install --cask alt-tab
 brew install --cask itsycal
 brew install --cask clipy
 brew install --cask appcleaner
@@ -61,6 +62,7 @@ brew install npm
 
 # Android
 brew install --cask android-studio
+brew install --cask android-platform-tools
 brew install scrcpy
 
 # Flutter
