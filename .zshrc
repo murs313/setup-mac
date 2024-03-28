@@ -5,7 +5,7 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 # コマンドのスペルをミスして実行したときに候補を表示する
 setopt correct
 # historyから補完する
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # 同時に起動しているzshの間でhistoryを共有する
 setopt share_history
