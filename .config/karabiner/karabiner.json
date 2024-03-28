@@ -75,7 +75,7 @@
                         ]
                     },
                     {
-                        "description": "Change Right Command to Kana .",
+                        "description": "Change Right Command to Kana.",
                         "manipulators": [
                             {
                                 "from": {
