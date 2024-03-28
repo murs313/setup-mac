@@ -30,3 +30,6 @@ export PATH="$PATH:$DENO_INSTALL/bin"
 
 # asdfの設定
 . /usr/local/opt/asdf/libexec/asdf.sh
+
+# anyenv
+eval "$(anyenv init -)"
