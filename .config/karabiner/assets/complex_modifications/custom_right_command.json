@@ -1,0 +1,77 @@
+{
+  "title": "Custom Command (@ryoheimorimoto)",
+  "rules": [
+	{
+	  "description": "Change Left Command to Eisuu.",
+	  "manipulators": [
+	    {
+	      "type": "basic",
+	      "from": {
+	        "key_code": "left_command",
+	        "modifiers": {
+	          "optional": [
+	            "any"
+	          ]
+	        }
+	      },
+	      "parameters": {
+	        "basic.to_if_alone_timeout_milliseconds": 200,
+	        "basic.to_if_held_down_threshold_milliseconds": 200
+	      },
+         "to": [
+           {
+             "key_code": "left_command",
+             "lazy": true
+           }
+         ],
+	      "to_if_alone": [
+	        {
+	          "key_code": "japanese_eisuu"
+	        }
+	      ],
+	      "to_if_held_down": [
+	        {
+	          "key_code": "left_command"
+	        }
+	      ]
+	    }
+	  ]
+	},
+	{
+	  "description": "Change Right Command to Kana .",
+	  "manipulators": [
+	    {
+	      "type": "basic",
+	      "from": {
+	        "key_code": "right_command",
+	        "modifiers": {
+	          "optional": [
+	            "any"
+	          ]
+	        }
+	      },
+	      "parameters": {
+	        "basic.to_if_alone_timeout_milliseconds": 200,
+	        "basic.to_if_held_down_threshold_milliseconds": 200
+	      },
+         "to": [
+           {
+             "key_code": "right_command",
+             "lazy": true
+           }
+         ],
+	      "to_if_alone": [
+	        {
+	          "key_code": "japanese_kana"
+	        }
+	      ],
+	      "to_if_held_down": [
+	        {
+	          "key_code": "right_command"
+	        }
+	      ]
+	    }
+	  ]
+	}
+  ]
+}
