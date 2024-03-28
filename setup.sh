@@ -36,10 +36,8 @@ source ~/.zshrc
 # karabiner
 brew install --cask karabiner-elements
 # karabinerを起動
-rm ~/.config/karabiner/karabiner.json
-ln -s ~/Git/setup-mac/.config/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
-rm -r ~/.config/karabiner/assets
-ln -s ~/Git/setup-mac/.config/karabiner/assets ~/.config/karabiner/
+rm -r ~/.config/karabiner
+ln -s ~/Git/setup-mac/.config/karabiner ~/.config/
 
 # essentials
 brew install --cask google-chrome
