@@ -14,6 +14,8 @@ killall Finder
 defaults write com.apple.screencapture location ~/Downloads/
 # スクリーンショットの影を消す
 defaults write com.apple.screencapture disable-shadow -boolean true
+# 入力切り替え時のポップアップを消す（再起動が必要）
+defaults write /Library/Preferences/FeatureFlags/Domain/UIKit.plist redesigned_text_cursor -dict-add Enabled -bool NO
 
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
