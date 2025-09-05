@@ -17,6 +17,16 @@ defaults write com.apple.screencapture disable-shadow -boolean true
 # 入力切り替え時のポップアップを消す（再起動が必要）
 defaults write /Library/Preferences/FeatureFlags/Domain/UIKit.plist redesigned_text_cursor -dict-add Enabled -bool NO
 
+# cocoaの一部のショートカットを無効化する
+# see: https://github.com/microsoft/vscode/issues/44070
+mkdir -p ~/Library/KeyBindings
+cat > ~/Library/KeyBindings/DefaultKeyBinding.dict <<EOF
+{
+  "@^\UF702" = "noop:"; // Cmd + Ctrl + Left Arrow
+  "@^\UF703" = "noop:"; // Cmd + Ctrl + Right Arrow
+}
+EOF
+
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
