@@ -2,7 +2,7 @@
     "title": "My rules",
     "rules": [
         {
-            "description": "[US/JA] command単体 -> 英数・かな",
+            "description": "[US/JA] command単体 -> 英数・かな、右command無効",
             "manipulators": [
                 {
                     "type": "basic",
